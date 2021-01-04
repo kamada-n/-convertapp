@@ -1,0 +1,7 @@
+.wrap {
+    display: flex;
+}
+
+.item {
+    color: blue;
+}

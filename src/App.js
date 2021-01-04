@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Form from './Form'
+import Resultform from './Resultform'
+import css from './app.module.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <>
+            <h1>重量換算アプリ</h1>
+            <p>食品の大さじ・小さじの量を重量（ｇ）に換算します。</p><br></br>
+            <p>...</p>
+            <div className={css.wrap}>
+                <div className={css.item}>しょうゆ　　　大さじ</div>
+                <div className={css.item}><Form /></div>
+                <div className={css.item}>g   </div>
+                <div className={css.item}>小さじ</div>
+                <div className={css.item}><Form /></div>
+                <div className={css.item}>g   </div>
+                <div className={css.item}>⇒</div>
+                <div className={css.item}><Resultform /></div>
+                <div className={css.item}>g</div>
+            </div>
+            <p>砂糖　　　　　大さじ　　　小さじ　　　　⇒　　　　ｇ</p>
+            <p>酒　　　　　　大さじ　　　小さじ　　　　⇒　　　　ｇ</p>
+        </>
+
+    )
 }
 
-export default App;
+export default App
