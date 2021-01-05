@@ -13,6 +13,7 @@ const Form = ({ addTodo }) => {
             <input type='number'
                 // placeholder="数字"
                 value={value}
+                step='0.5'
                 onChange={e => {
                     setValue(e.target.value)
                 }}
