@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 
-const Resultform = ({ addTodo }) => {
+const Resultform = ({ }) => {
     const [value, setValue] = useState('')
 
     const handleSubmit = e => {
         e.preventDefault()
-        addTodo(value)
 
     }
     return (

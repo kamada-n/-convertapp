@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Form from './Form'
-import Resultform from './Resultform'
 import css from './app.module.css'
 
 const App = () => {
@@ -10,17 +9,9 @@ const App = () => {
             <p>食品の大さじ・小さじの量を重量（ｇ）に換算します。</p><br></br>
             <p>...</p>
             <div className={css.wrap}>
-                <div className={css.item}>水　　　　　　　　大さじ</div>
-                <div className={css.item}><Form /></div>
-                <div className={css.item}>g</div>
-                <div className={css.item}>小さじ</div>
-                <div className={css.item}><Form /></div>
-                <div className={css.item}>g</div>
-                <div className={css.item}>⇒</div>
-                <div className={css.item}><Resultform /></div>
-                <div className={css.item}>g</div>
+                <Form/>
             </div>
-            <div className={css.wrap}>
+            {/* <div className={css.wrap}>
                 <div className={css.item}>酒　　　　　　　　大さじ</div>
                 <div className={css.item}><Form /></div>
                 <div className={css.item}>g</div>
@@ -184,7 +175,7 @@ const App = () => {
                 <div className={css.item}>⇒</div>
                 <div className={css.item}><Resultform /></div>
                 <div className={css.item}>g</div>
-            </div>
+            </div> */}
         </>
 
     )
